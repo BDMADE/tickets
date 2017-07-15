@@ -13,3 +13,8 @@
   !/log/.keep /tmp 
   /.idea/
   config/database.yml
+log/development.log
+tmp/cache
+tmp/pids
+tmp/restart.txt
+tmp/sockets
