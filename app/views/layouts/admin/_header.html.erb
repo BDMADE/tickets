@@ -1,0 +1,68 @@
+<header class="main-header">
+  <!-- Logo -->
+  <a href="javascript:void(0)" class="logo">
+    <!-- mini logo for sidebar mini 50x50 pixels -->
+    <span class="logo-mini">      
+      <b><i class="fa fa-diamond"></i></b>    
+    </span>
+    <!-- logo for regular state and mobile devices -->
+    <span class="logo-lg">    
+      <b>Tickets</b>&nbsp;Management      
+    </span>
+  </a>
+  <!-- Header Navbar: style can be found in header.less -->
+  <nav class="navbar navbar-static-top">
+    <!-- Sidebar toggle button-->
+    <a href="javascript:void(0)" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </a>
+
+    <div class="navbar-custom-menu">
+      <ul class="nav navbar-nav">
+        <li class="dropdown user user-menu">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+            <%# if current_user.image.present? %>
+              <%#= image_tag current_user.image.url(:medium), class: 'user-image' %>
+            <%# else %>
+              <i class="fa fa-user"></i>
+            <%# end %>
+            <span class="hidden-xs"><%= current_user.name %></span>
+          </a>
+          <ul class="dropdown-menu">
+            <!-- User image -->
+            <li class="user-header">
+              <%# if current_user.image.present? %>
+                <%#= image_tag current_user.image.url(:large), class: 'img-circle' %>
+              <%# end %>
+              <p>
+                <%= current_user.name %> - <%= current_user.profession %>
+                <small>Member since <%= current_user.created_at.strftime('%b %d, %Y') %></small>
+              </p>
+            </li>
+            <!-- Menu Body -->
+            <li class="user-body">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <a href="javascript:void(0)"><%= current_user.user_type.name.upcase %></a>
+                </div>
+              </div>
+              <!-- /.row -->
+            </li>
+            <!-- Menu Footer-->
+            <li class="user-footer">
+              <div class="pull-left">
+                <a href="<%= user_url(current_user) %>" class="btn btn-default btn-flat">Profile</a>
+              </div>
+              <div class="pull-right">
+                <a href="<%= logout_url %>" class="btn btn-default btn-flat">Sign out</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

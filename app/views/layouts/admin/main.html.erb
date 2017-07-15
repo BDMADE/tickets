@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<%= render 'layouts/admin/head', title: @title %>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+  <%= render 'layouts/admin/header' %>
+  <!-- Left side column. contains the logo and sidebar -->
+  <%= render 'layouts/admin/nav' %>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <%= render 'layouts/admin/page_header', title: @title, breadcrumb: @breadcrumb %>
+    <!-- Main content -->
+    <section class="content">
+      <%= render 'shared/flash_notice' %>
+      <%= yield %>
+    </section>
+    <!-- /.content -->
+    <div class="clearfix"></div>
+  </div>
+  <!-- /.content-wrapper -->
+  <%= render 'layouts/admin/footer' %>
+
+</div>
+<!-- ./wrapper -->
+<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</body>
+</html>

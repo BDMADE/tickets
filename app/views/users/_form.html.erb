@@ -1,0 +1,121 @@
+<div class="row">
+  <!-- left column -->
+  <div class="col-md-12 col-xs-12">
+    <!-- general form elements -->
+    <div class="box box-primary">
+      <div class="box-header with-border">
+        <h3 class="box-title">
+          <% if  request.original_url == new_user_url %>
+          <%= 'New User' %>
+           <% else %>
+          <%= 'Editing User' %>
+          <% end %>
+        </h3>
+      </div>
+      <!-- /.box-header -->
+      <!-- form start -->      
+          <%= form_with(model: user, local: true) do |f| %>
+          <div class="box-body">
+            <% if user.errors.any? %>
+                <div id="error_explanation">
+                  <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+                  <ul>
+                    <% user.errors.full_messages.each do |message| %>
+                        <li><%= message %></li>
+                    <% end %>
+                  </ul>
+                </div>
+            <% end %>
+
+            <div class="col-md-4 col-xs-4">
+              <% if user.image.present? %>
+                  <%= image_tag user.image.url(:large), class: 'img-responsive' %>
+              <% end %>
+
+              <br/>
+
+              <div class="form-group">
+                <div class="btn btn-primary btn-file"> <i class="glyphicon glyphicon-folder-open"></i> &nbsp;Browse … <%= f.file_field :image %></div>
+                <% if user.image.present? %>
+                    <p class="help-block">Please upload another profile photo</p>
+                <% else %>
+                <p class="help-block">Please upload in your profile photo</p>
+                <% end %>
+              </div>
+
+            </div>
+
+            <div class="col-md-4 col-xs-4">
+              <div class="form-group">
+                <%= f.label :full_name %>*
+                <%= f.text_field :name, required: 'require', class: 'form-control', placeholder: 'Name' %>
+              </div>
+              <div class="form-group">
+                <label>User Type</label>*
+                <select class="form-control" name="user[user_type_id]" id="user_user_type_id">
+                  <% UserType.where(published: true).each do |type| %>
+                      <option value="<%= type.id %>"><%= type.name.upcase %></option>
+                  <% end %>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <%= f.label :email %>*
+                <%= f.email_field :email, required: 'require', class: 'form-control', placeholder: 'E-mail' %>
+              </div>
+              <div class="form-group">
+                <%= f.label :profession %>
+                <%= f.text_field :profession, required: 'require', class: 'form-control', placeholder: 'Profession' %>
+              </div>
+
+            </div>
+            <div class="col-md-4 col-xs-4">
+              <div class="form-group">
+                <%= f.label :username %>*
+                <%= f.text_field :username, required: 'require', class: 'form-control', placeholder: 'Username' %>
+              </div>
+
+              <div class="form-group">
+                <%= f.label :password %>*
+                <div class=" row">
+                  <div class="col-xs-6">
+                    <%= f.password_field :password, required: 'require', class: 'form-control', placeholder: 'Password' %>
+                    <small class="help-block">Minimum 6 characters</small>
+                  </div>
+
+                  <div class="col-xs-6">
+                    <%= f.password_field :password_confirmation, required: 'require', class: 'form-control', placeholder: 'Confirm' %>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="form-group">
+                <div class="row">            
+
+              <div class="col-xs-12 ">
+                <%= f.label :mobile_number %>*
+                <%= f.number_field :phone, required: 'require', class: 'form-control', placeholder: 'Mobile Number' %>
+              </div>
+                </div>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <%= f.check_box :published %> Published me
+                </label>
+              </div>
+
+            </div>
+          </div>
+          <!-- /.box-body -->
+          <div class="modal-footer">
+            <%= f.submit 'Submit', class: 'btn btn-primary' %>
+            <%= link_to 'Back', users_path, class: 'btn btn-default' %>
+          </div>
+      <% end %>
+      </div>
+  <!-- /.box -->
+
+</div>
+</div>
