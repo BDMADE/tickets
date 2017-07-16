@@ -16,4 +16,4 @@ test:
   override:
   - bundle exec rspec spec
   - "[[ ! -s \"$(git rev-parse --git-dir)/shallow\" ]] || git fetch --unshallow"
-  - "[[ ! -z \"${CI_PULL_REQUEST}\" ]] && bundle exec pronto run -f bitbucket_status bitbucket_pr -c origin/master || true"
+  - "[[ ! -z \"${CI_PULL_REQUEST}\" ]] && bundle exec pronto run -f github_status github_pr -c origin/master || true"
