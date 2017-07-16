@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :user_type do
-    name "MyString"
-    published false
+    name "admin"
+    published true
   end
 end

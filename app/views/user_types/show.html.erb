@@ -1,14 +1,31 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @user_type.name %>
-</p>
-
-<p>
-  <strong>Published:</strong>
-  <%= @user_type.published %>
-</p>
-
-<%= link_to 'Edit', edit_user_type_path(@user_type) %> |
-<%= link_to 'Back', user_types_path %>
+<div class="row">
+  <!-- left column -->
+  <div class="col-md-12 col-xs-12">
+    <!-- general form elements -->
+    <div class="box box-primary">
+      <div class="box-header with-border">
+        <h3 class="box-title">User Type</h3>
+      </div>
+      <!-- /.box-header -->
+      <!-- form start -->
+      <div class="box-body">
+        <div class="form-group">
+          <label for="user_full_name">Name</label>
+          <span class="form-control"><%= @user_type.name %></span>
+        </div>
+        <div class="form-group">
+          <label>Published</label>
+          <span class="form-control"><%= @user_type.published %></span>
+        </div>
+      </div>
+      <!-- /.box-body -->
+      <div class="modal-footer">
+        <% if has_permission?('edit')%>
+        <%= link_to 'Edit', edit_user_type_path(@user_type), class: 'btn btn-primary' %>
+        <% end %>
+        <%= link_to 'Back', user_types_path, class: 'btn btn-default' %>
+      </div>
+    </div>
+    <!-- /.box -->
+  </div>
+</div>

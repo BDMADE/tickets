@@ -1,54 +1,72 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <!-- left column -->
+  <div class="col-md-12 col-xs-12">
+    <!-- general form elements -->
+    <div class="box box-primary">
+      <div class="box-header with-border">
+        <h3 class="box-title"><%= @user.name%>'s Profile</h3>
+      </div>
+      <!-- /.box-header -->
+      <!-- form start -->
+      <div class="box-body">
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
+        <div class="col-md-4 col-xs-4">
+          <div class="form-group">
+            <%if @user.image.present? %>
+              <%= image_tag @user.image.url(:large), class: 'img-responsive' %>
+              <p class="help-block"><%= @user.name %>'s photo</p>
+            <% else %>
+              <%= 'No image is uploaded yet !' %>
+            <% end %>
+          </div>
 
-<p>
-  <strong>Username:</strong>
-  <%= @user.username %>
-</p>
+        </div>
 
-<p>
-  <strong>Password digest:</strong>
-  <%= @user.password_digest %>
-</p>
+        <div class="col-md-4 col-xs-4">
+          <div class="form-group">
+            <label for="user_full_name">Full name</label>
+            <span class="form-control"><%= @user.name %></span>
+          </div>
+          <div class="form-group">
+            <label>User Type</label>
+            <span class="form-control"><%= @user.user_type_name.upcase %></span>
+          </div>
 
-<p>
-  <strong>Remember digest:</strong>
-  <%= @user.remember_digest %>
-</p>
+          <div class="form-group">
+            <label for="user_email">Email</label>
+            <span class="form-control" ><%= @user.email %></span>
+          </div>       
+        </div>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+        <div class="col-md-4 col-xs-4">
 
-<p>
-  <strong>Ip address:</strong>
-  <%= @user.ip_address %>
-</p>
+          <div class="form-group">
+            <label for="user_username">Username</label>
+            <span class="form-control"><%= @user.username %></span>
+          </div>          
 
-<p>
-  <strong>Publised:</strong>
-  <%= @user.published %>
-</p>
+          <div class="form-group">
+            <label for="user_pin_number">Published</label>
+            <span class="form-control"><%= @user.published %></span>
+          </div> 
 
-<p>
-  <strong>Profession:</strong>
-  <%= @user.profession %>
-</p>
+          <div class="form-group">
+            <label for="user_profession">Profession</label>
+            <span class="form-control"><%= @user.profession %></span>
+          </div>        
 
-<p>
-  <strong>Phone:</strong>
-  <%= @user.phone %>
-</p>
+        </div>
+      </div>
+      <!-- /.box-body -->
+      <div class="modal-footer">
+        <% if has_permission?('edit') %>
+          <%= link_to 'Edit', edit_user_path(@user), class: 'btn btn-primary' %>
+        <% end %>
+        <%= link_to 'Back', users_path, class: 'btn btn-default' %>
+      </div>
 
-<p>
-  <strong>User type:</strong>
-  <%= @user.user_type %>
-</p>
+    </div>
+    <!-- /.box -->
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+  </div>
+</div>

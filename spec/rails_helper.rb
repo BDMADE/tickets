@@ -4,6 +4,7 @@ abort('The Rails environment is running in production mode!') if Rails.env.produ
 require 'rspec/rails'
 require 'factory_girl_rails'
 require 'capybara/rspec'
+require 'login_helper'
 ActiveRecord::Migration.maintain_test_schema!
 # rubocop:disable MethodLength
 RSpec.configure do |config| 

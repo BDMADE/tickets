@@ -10,7 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170715031712) do
+ActiveRecord::Schema.define(version: 20170715063621) do
+
+  create_table "permissions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.bigint "user_type_id"
+    t.boolean "dashboard"
+    t.boolean "usertype"
+    t.boolean "user"
+    t.boolean "add"
+    t.boolean "edit"
+    t.boolean "remove_ability"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_type_id"], name: "index_permissions_on_user_type_id"
+  end
 
   create_table "user_types", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
@@ -39,5 +52,6 @@ ActiveRecord::Schema.define(version: 20170715031712) do
     t.index ["user_type_id"], name: "index_users_on_user_type_id"
   end
 
+  add_foreign_key "permissions", "user_types"
   add_foreign_key "users", "user_types"
 end

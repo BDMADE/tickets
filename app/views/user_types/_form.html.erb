@@ -1,27 +1,59 @@
-<%= form_with(model: user_type, local: true) do |form| %>
-  <% if user_type.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(user_type.errors.count, "error") %> prohibited this user_type from being saved:</h2>
+  <div class="row">
+  <!-- left column -->
+  <div class="col-md-12 col-xs-12">
+    <!-- general form elements -->
+    <div class="box box-primary">
+      <div class="box-header with-border">
+        <h3 class="box-title">
+          <% if  request.original_url == new_user_type_url %>
+              <%= 'New User Type' %>
+          <% else %>
+              <%= 'Editing User Type' %>
+          <% end %>
+        </h3>
+      </div>
+      <!-- /.box-header -->
+      <!-- form start -->
+      <%= form_with(model: user_type, local: true) do |f| %>
+          <div class="box-body">            
+            <div class="form-group">
+              <%= f.label :name %>
+              <%= f.text_field :name, required: 'require', class: 'form-control', placeholder: 'Name' %>
+            </div>
+            <label>Permissions</label>
+            <%= f.fields_for :permission do |permission| %>
+              <div class="checkbox">
+                <label><%= permission.check_box :dashboard %>Dashboard</label>                
+              </div>
+              
+              <label>Administrative Permission</label>
+              <div class="checkbox">
+                <label><%= permission.check_box :usertype %> User Type</label>
+                <label><%= permission.check_box :user %>Users</label>                
+              </div>
+              
+              <label>Action Permission</label>
+              <div class="checkbox">
+                <label><%= permission.check_box :add %> Add</label>
+                <label><%= permission.check_box :edit %>Edit</label>
+                <label><%= permission.check_box :remove_ability %>Delete</label>
+              </div>
+            <% end %>
 
-      <ul>
-      <% user_type.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+            <div class="checkbox">
+              <label>
+                <%= f.check_box :published %> Published me
+              </label>
+            </div>
+
+          </div>
+          <!-- /.box-body -->
+          <div class="modal-footer">
+            <%= f.submit 'Submit', class: 'btn btn-primary' %>
+            <%= link_to 'Back', user_types_path, class: 'btn btn-default' %>
+          </div>
       <% end %>
-      </ul>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :user_type_name %>
+    <!-- /.box -->
   </div>
-
-  <div class="field">
-    <%= form.label :published %>
-    <%= form.check_box :published, id: :user_type_published %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+</div>

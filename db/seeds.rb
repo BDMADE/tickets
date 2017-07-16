@@ -7,6 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 ip_address = UsersHelper.ip_address
 user_type = UserType.create(name: 'admin', published: true)
+Permission.create(user_type_id: user_type.id, dashboard: true, usertype: true, user: true,
+                  add: true, edit: true,remove_ability: true)
+
 
 User.create(name: 'Tanbir Hasan',
             username: 'hmtanbir',

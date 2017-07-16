@@ -1,14 +1,13 @@
 FactoryGirl.define do
   factory :user do
-    name "MyString"
-    username "MyString"
-    password_digest "MyString"
-    remember_digest "MyString"
-    email "MyString"
-    ip_address "MyString"
-    publised false
-    profession "MyString"
-    phone "MyString"
-    user_type nil
+    name "John Doe"
+    username "johndoe"
+    password "secret"
+    email "john@doe.com"
+    ip_address "127.0.0.1"
+    published true
+    profession "SOftware Engnineer"
+    phone "1234567"
+    user_type
   end
 end

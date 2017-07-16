@@ -23,11 +23,26 @@
         </a>
       </li>
 
-      <li class="#">
-        <a href="#">
-          <i class="fa fa-users"></i> <span>Buyers</span>
+      <li class="treeview <%= 'hidden' unless (has_permission?('user') || has_permission?('usertype')) %>">
+        <a href="javascript:void(0)">
+          <i class="fa fa-gears"></i>
+          <span>Administration</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
         </a>
-      </li>      
+        <ul class="treeview-menu">
+          <li class="<%= 'hidden' unless has_permission?('user') %>"><a href="<%= users_url %>"><i class="fa fa-circle-o"></i> Manage Users</a></li>
+          <li class="<%= 'hidden' unless has_permission?('usertype') %>"><a href="<%= user_types_url %>"><i class="fa fa-circle-o"></i> User Type</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="<%= password_changes_url %>">
+          <i class="fa fa-key"></i> <span>Change Password</span>
+        </a>
+      </li>
+
     </ul>
   </section>
   <!-- /.sidebar -->
