@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get 'password_changes', to: 'password_changes#edit', as: 'password_changes'
   post 'password_changes', to: 'password_changes#update'
-  root 'dashboard#index'
+
   get 'dashboard', to: 'dashboard#index'
   get 'welcome', to: 'dashboard#welcome'
   get 'login', to: 'sessions#new', as: 'login'
@@ -18,5 +18,8 @@ Rails.application.routes.draw do
   get 'registrations', to: 'users#registration', as: 'registrations'
   post 'registrations', to: 'users#create'
 
-  get 'show_ticket/:id', to: 'tickets#show_ticket'
+  get 'show_tickets/:id', to: 'tickets#show_tickets'
+
+  root 'dashboard#home'
+
 end
