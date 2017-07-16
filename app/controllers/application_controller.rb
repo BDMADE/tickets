@@ -18,7 +18,7 @@ class ApplicationController < ActionController::Base
       if has_permission?('dashboard')
         redirect_to dashboard_path, alert: 'Yo do not have permission !'
       else
-        redirect_to blank_page_path, alert: 'Yo do not have permission !'
+        redirect_to root_path, alert: 'Yo do not have permission !'
       end
     end
   end

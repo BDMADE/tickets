@@ -21,7 +21,7 @@ class UserTypesController < ApplicationController
     @title = 'User Types Management'
   end
 
-  # GET /user_types/new
+  # GET /user_types/registration
   def new
     @title = 'User Types Management'
     @breadcrumb = 'Users Types > New'
@@ -92,6 +92,6 @@ class UserTypesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_type_params
       params.require(:user_type).permit(:name, :published,
-                                        permission_attributes: [:dashboard, :usertype, :user, :add, :edit, :remove_ability])
+                                        permission_attributes: [:dashboard, :usertype, :user, :ticket, :add, :edit, :remove_ability])
     end
 end

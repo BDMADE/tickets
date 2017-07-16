@@ -49,9 +49,9 @@ RSpec.describe UsersController, type: :controller do
     end
   end
 
-  describe 'GET #new' do
-    it 'assigns a new user as @user' do
-      get :new
+  describe 'GET #registration' do
+    it 'assigns a registration user as @user' do
+      get :registration
       expect(assigns(:user)).to be_a_new(User)
     end
   end
@@ -66,7 +66,7 @@ RSpec.describe UsersController, type: :controller do
 
   describe 'POST #create' do
     context 'with valid params' do
-      it 'creates a new User' do
+      it 'creates a registration User' do
         expect {
           post :create, params: { user: valid_attributes }
         }.to change(User, :count).by(1)
@@ -90,9 +90,9 @@ RSpec.describe UsersController, type: :controller do
         expect(assigns(:user)).to be_a_new(User)
       end
 
-      it 're-renders the new template' do
+      it 're-renders the registration template' do
         post :create, params: {user: invalid_attributes}
-        expect(response).to render_template("new")
+        expect(response).to render_template("registration")
       end
     end
   end

@@ -1,12 +1,12 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-  before_action :authorized?
+  before_action :authorized?, except: [:registration, :create]
   before_action :user_permission, only: [:index]
-  before_action :can_add?, only: [:new, :create]
+
   before_action :edit_ability?, only: [:edit, :update]
   before_action :can_delete?, only: :destroy
 
-  layout 'admin/main'
+  layout 'admin/main', except: :registration
 
   # GET /users
   # GET /users.json
@@ -45,10 +45,16 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
+        format.html {
+          if @user.user_type.name == 'customer'
+            redirect_to login_url, notice: 'Registration is completed. Please login'
+          else
+            redirect_to @user, notice: 'User was successfully created.'
+          end
+        }
         format.json { render :show, status: :created, location: @user }
       else
-        format.html { render :new }
+        format.html { redirect_to registrations_path, alert: @user.errors.full_messages.to_sentence }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
@@ -78,6 +84,12 @@ class UsersController < ApplicationController
       format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  # GET /users/registration
+  def registration
+    @user = User.new
+    @type_id = UserType.find_by(name: 'customer', published: true).id
   end
 
   private

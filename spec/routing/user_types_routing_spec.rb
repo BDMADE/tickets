@@ -7,8 +7,8 @@ RSpec.describe UserTypesController, type: :routing do
       expect(:get => '/user_types').to route_to('user_types#index')
     end
 
-    it 'routes to #new' do
-      expect(:get => '/user_types/new').to route_to('user_types#new')
+    it 'routes to #registration' do
+      expect(:get => '/user_types/registration').to route_to('user_types#new')
     end
 
     it 'routes to #show' do

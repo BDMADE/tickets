@@ -1,8 +1,8 @@
 class DashboardController < ApplicationController
-  before_action :authorized?
+  before_action :authorized?, only: [:index, :welcome]
   before_action :dashboard_permission, only: :index
   
-  layout 'admin/main'
+  layout 'admin/main', except: :home
 
   def index
   	@title = 'Dashboard'
@@ -12,7 +12,12 @@ class DashboardController < ApplicationController
   def welcome
   	@title = 'Dashboard'
     @breadcrumb = 'Dashboard'
-  end 
+  end
+  
+  def home
+    @title = 'Home'
+    @breadcrumb = 'Home'
+  end
 
   private
 

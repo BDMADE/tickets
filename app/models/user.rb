@@ -4,6 +4,7 @@ class User < ApplicationRecord
                                       thumb: '100x100>' }, default_url: '/assets/no-user.png'
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
   belongs_to :user_type, class_name: 'UserType', inverse_of: 'users'
+  has_many :tickets, class_name: 'Ticket', inverse_of: 'user'
   delegate :name, to: :user_type, prefix: true
 
   attr_accessor :remember_token

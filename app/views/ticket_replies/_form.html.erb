@@ -1,0 +1,24 @@
+<% unless @ticket.status_type == 'closed' %>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-xs-8">
+        <%= form_for([@ticket, @ticket.ticket_replies.build]) do |f| %>
+          <div class="form-group">
+            <%= f.text_area :description, required: 'require', class: 'form-control', placeholder: 'Reply' %>
+          </div>
+
+          <%= f.hidden_field :user_id, value: current_user.id %>
+
+          <%= f.submit 'Add Reply', class: 'btn btn-primary' %>
+
+          <% if @ticket.user.user_type.name == 'customer' %>
+            <%= link_to 'Back', root_path, class: 'btn btn-default' %>
+          <% else %>
+            <%= link_to 'Back', welcome_path, class: 'btn btn-default' %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+<% end %>
