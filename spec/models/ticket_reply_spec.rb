@@ -1,5 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe TicketReply, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe 'validation' do
+    it { is_expected.to validate_presence_of :description }
+  end
+
+  describe 'association' do
+    it { is_expected.to belong_to :ticket }
+    it { is_expected.to belong_to :user }
+  end
 end

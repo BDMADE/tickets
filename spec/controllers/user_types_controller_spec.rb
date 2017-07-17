@@ -36,13 +36,6 @@ RSpec.describe UserTypesController, type: :controller do
     end
   end
 
-  describe 'GET #registration' do
-    it 'assigns a registration user type as user_type' do
-      get :registration
-      expect(assigns(:user_type)).to be_a_new(UserType)
-    end
-  end
-
   describe 'GET #edit' do
     it 'assigns requested user type as user_type' do
       user_type = UserType.create! valid_attributes
@@ -75,11 +68,6 @@ RSpec.describe UserTypesController, type: :controller do
       it 'assigns a newly created but unsaved user type' do
         post :create, params: {user_type: invalid_attributes}
         expect(assigns(:user_type)).to be_a_new(UserType)
-      end
-
-      it "re-renders the 'registration' template" do
-        post :create, params: {user_type: invalid_attributes}
-        expect(response).to render_template('registration')
       end
     end
   end

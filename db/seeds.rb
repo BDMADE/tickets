@@ -20,10 +20,10 @@ Permission.create(user_type_id: user_type_2.id, dashboard: false, ticket: true, 
                   add: true, edit: true,remove_ability: false)
 
 
-User.create(name: 'Tanbir Hasan',
-            username: 'hmtanbir',
+User.create(name: 'John Doe',
+            username: 'admin',
             password: 'secret',
-            email: 'tanbir2025@gmail.com',            
+            email: 'admin@example.com',
             ip_address: ip_address,
             published: true,
             user_type_id: user_type.id,

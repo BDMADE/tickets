@@ -51,6 +51,7 @@ RSpec.describe UsersController, type: :controller do
 
   describe 'GET #registration' do
     it 'assigns a registration user as @user' do
+      FactoryGirl.create :user_type, name: 'customer'
       get :registration
       expect(assigns(:user)).to be_a_new(User)
     end
@@ -92,7 +93,7 @@ RSpec.describe UsersController, type: :controller do
 
       it 're-renders the registration template' do
         post :create, params: {user: invalid_attributes}
-        expect(response).to render_template("registration")
+        expect(response).to redirect_to(registrations_path)
       end
     end
   end

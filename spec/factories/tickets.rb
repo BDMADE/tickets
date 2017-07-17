@@ -4,7 +4,7 @@ FactoryGirl.define do
     email "MyString"
     subject "MyString"
     message "MyText"
-    status_type 1
+    status_type 'open'
     user nil
   end
 end
