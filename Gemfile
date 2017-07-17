@@ -95,3 +95,7 @@ gem 'pg', group: :production
 gem 'rack-cache', :require => 'rack/cache'
 # install gem better_error
 gem 'better_errors', '~> 2.1', '>= 2.1.1'
+# bundle exec rake doc:rails generates the API under doc/api.
+gem 'sdoc', group: :doc
+# for api built
+gem 'grape'

@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  get 'products/index'
+
+  get 'products/show'
+
+  get 'products/new'
+
+  get 'products/create'
+
+  get 'products/edit'
+
+  get 'products/update'
+
+  get 'products/destroy'
+
   resources :users
   resources :tickets do
     resources :ticket_replies
@@ -21,5 +35,8 @@ Rails.application.routes.draw do
   get 'show_tickets/:id', to: 'tickets#show_tickets'
 
   root 'dashboard#home'
+  ## for API
+
+  mount Users::TypesAPI => '/api/user_types'
 
 end
