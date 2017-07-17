@@ -1,18 +1,4 @@
 Rails.application.routes.draw do
-  get 'products/index'
-
-  get 'products/show'
-
-  get 'products/new'
-
-  get 'products/create'
-
-  get 'products/edit'
-
-  get 'products/update'
-
-  get 'products/destroy'
-
   resources :users
   resources :tickets do
     resources :ticket_replies
@@ -23,8 +9,9 @@ Rails.application.routes.draw do
   get 'password_changes', to: 'password_changes#edit', as: 'password_changes'
   post 'password_changes', to: 'password_changes#update'
 
-  get 'dashboard', to: 'dashboard#index'
-  get 'welcome', to: 'dashboard#welcome'
+  get 'dashboard', to: 'dashboard#index', as: 'dashboard'
+  get 'reports', to: 'dashboard#reports', as: 'reports'
+  get 'welcome', to: 'dashboard#welcome', as: 'welcome'
   get 'login', to: 'sessions#new', as: 'login'
   post 'login', to: 'sessions#create'
   get 'logout', to: 'sessions#destroy', as: 'logout'
@@ -32,7 +19,7 @@ Rails.application.routes.draw do
   get 'registrations', to: 'users#registration', as: 'registrations'
   post 'registrations', to: 'users#create'
 
-  get 'show_tickets/:id', to: 'tickets#show_tickets'
+  get 'show_tickets/:id', to: 'tickets#show_tickets', as: 'show_tickets'
 
   root 'dashboard#home'
   ## for API
