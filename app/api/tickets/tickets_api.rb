@@ -61,7 +61,7 @@ module Tickets
     }
 
     params do
-      requires :id, type: Integer, desc: "Ticket id"
+      optional :id, type: Integer, desc: "Ticket id"
       requires :name, type: String, desc: "Ticket name"
       requires :email, type: String, desc: "Ticketer email"
       requires :subject, type: String, desc: "Ticket subject"
@@ -100,7 +100,7 @@ module Tickets
     }
 
     params do
-      requires :id, type: Integer, desc: "Ticket id"
+      optional :id, type: Integer, desc: "Ticket id"
       requires :name, type: String, desc: "Ticket name"
       requires :email, type: String, desc: "Ticketer email"
       requires :subject, type: String, desc: "Ticket subject"

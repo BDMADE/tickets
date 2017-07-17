@@ -61,7 +61,7 @@ module Users
     }
 
     params do
-      requires :id, type: Integer, desc: "User id"
+      optional :id, type: Integer, desc: "User id"
       requires :name, type: String, desc: "User name"
       requires :email, type: String, desc: "User email"
       requires :password, type: String, desc: "User password"
@@ -104,8 +104,9 @@ module Users
     }
 
     params do
-      requires :id, type: Integer, desc: "User id"
+      optional :id, type: Integer, desc: "User id"
       requires :name, type: String, desc: "User name"
+      requires :username, type: String, desc: "User username"
       requires :email, type: String, desc: "User email"
       requires :password, type: String, desc: "User password"
       optional :ip_address, type: String, desc: "User ip address"
@@ -119,6 +120,7 @@ module Users
       begin
         user = User.create({
                              name: params[:name],
+                             username: params[:username],
                              email: params[:email],
                              password: params[:password],
                              ip_address: params[:ip_address],

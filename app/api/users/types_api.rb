@@ -61,7 +61,7 @@ module Users
     }
 
     params do
-      requires :id, type: Integer, desc: "User Type id"
+      optional :id, type: Integer, desc: "User Type id"
       requires :name, type: String, desc: "User Type name"
       optional :published, type: Boolean, desc: "User Type published"
     end
@@ -92,14 +92,14 @@ module Users
     }
 
     params do
-      requires :id, type: Integer, desc: "User Type id"
+      optional :id, type: Integer, desc: "User Type id"
       requires :name, type: String, desc: "User Type name"
       optional :published, type: Boolean, desc: "User Type published"
     end
 
     post do
       begin
-        user_type= UserType.create({
+        user_type = UserType.create({
                                      name: params[:name],
                                      published: params[:published]
                                    })
