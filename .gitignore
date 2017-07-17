@@ -19,3 +19,4 @@ tmp/pids
 tmp/restart.txt
 tmp/sockets
 log/test.log
+coverage

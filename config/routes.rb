@@ -38,5 +38,6 @@ Rails.application.routes.draw do
   ## for API
 
   mount Users::TypesAPI => '/api/user_types'
-
+  mount Users::UsersAPI => '/api/users'
+  mount Tickets::TicketsAPI =>'/api/tickets'
 end

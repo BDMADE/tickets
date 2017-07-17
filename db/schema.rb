@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170717080054) do
+ActiveRecord::Schema.define(version: 20170716121455) do
 
   create_table "permissions", force: :cascade do |t|
     t.integer "user_type_id"
@@ -24,15 +24,6 @@ ActiveRecord::Schema.define(version: 20170717080054) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_type_id"], name: "index_permissions_on_user_type_id"
-  end
-
-  create_table "products", force: :cascade do |t|
-    t.string "name"
-    t.decimal "price"
-    t.text "short_description"
-    t.text "full_description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "ticket_replies", force: :cascade do |t|

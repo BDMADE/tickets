@@ -5,6 +5,8 @@ require 'rspec/rails'
 require 'factory_girl_rails'
 require 'capybara/rspec'
 require 'login_helper'
+require 'simplecov'
+SimpleCov.start
 ActiveRecord::Migration.maintain_test_schema!
 # rubocop:disable MethodLength
 RSpec.configure do |config| 

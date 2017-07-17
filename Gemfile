@@ -99,3 +99,6 @@ gem 'better_errors', '~> 2.1', '>= 2.1.1'
 gem 'sdoc', group: :doc
 # for api built
 gem 'grape'
+
+# for mapping test coverage
+gem 'simplecov', :require => false, :group => :test
