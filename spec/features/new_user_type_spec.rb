@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature 'User Type' do
+feature 'New User Type' do
   scenario 'user can add new user type' do
     user_type = FactoryGirl.create(:user_type)
     user = FactoryGirl.create(:user, user_type_id: user_type.id)
