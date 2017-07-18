@@ -1,8 +1,86 @@
 <div class="container">
-  <div class="jumbotron">
-    <h1>Tickets</h1>
-    <p>Tickets is the most popular HTML, CSS, and JS framework for developing
-      responsive, mobile-first projects on the web.</p>
-  </div>
-</div>
+  <% if current_user %>
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="info-box">
+          <span class="info-box-icon bg-green"><i class="fa fa-comments"></i></span>
+          <div class="info-box-content">
+            <span class="info-box-number">Total Open Tickets</span>
+            <span class="info-box-text"><%= @open_tickets.count %></span>
+          </div><!-- /.info-box-content -->
+        </div><!-- /.info-box -->
+      </div><!-- /.col -->
 
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="info-box">
+          <span class="info-box-icon bg-red"><i class="fa fa-coffee"></i></span>
+          <div class="info-box-content">
+            <span class="info-box-number">Total Closed Ticket</span>
+            <span class="info-box-text"><%= @closed_tickets.count %></span>
+          </div><!-- /.info-box-content -->
+        </div><!-- /.info-box -->
+      </div><!-- /.col -->
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <div class="box">
+          <div class="box-header">
+            <div class=" col-md-6 col-xs-6">
+              <h3 class="box-title">Ticket List</h3>
+            </div>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <table id="example1" class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>Customer Name</th>
+                <th>Subject</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+              </thead>
+              <tbody>
+              <% @tickets.each do |ticket| %>
+                <tr>
+                  <td><%= ticket.user.name %></td>
+                  <td><%= ticket.subject %></td>
+                  <% if ticket.status_type == 'open' %>
+                    <% span_class = 'label-success'  %>
+                  <% else %>
+                    <% span_class = 'label-danger'  %>
+                  <% end %>
+                  <td>
+                    <span class="label <%= span_class %>"><%= ticket.status_type %></span></td>
+                  <td>
+                    <a href="<%= show_tickets_path(ticket) %>" class="btn btn-success btn-flat" ><i class="fa fa-eye"></i></a>
+                  </td>
+                </tr>
+              <% end %>
+              </tbody>
+              <tfoot>
+              <tr>
+                <th>Customer Name</th>
+                <th>Subject</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+              </tfoot>
+            </table>
+          </div>
+          <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+      </div>
+      <!-- /.col -->
+    </div>
+
+<% else %>
+    <div class="jumbotron">
+      <h1>Tickets</h1>
+      <p>Tickets is the most popular HTML, CSS, and JS framework for developing
+        responsive, mobile-first projects on the web.</p>
+    </div>
+  <% end %>
+</div>

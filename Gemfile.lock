@@ -159,6 +159,7 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-validation-rails (1.16.0)
     json (2.1.0)
+    jszip-rails (2.5.0)
     launchy (2.4.3)
       addressable (~> 2.3)
     letter_opener (1.4.1)
@@ -424,6 +425,7 @@ DEPENDENCIES
   jquery-datatables-rails (~> 3.4)
   jquery-rails
   jquery-validation-rails
+  jszip-rails
   letter_opener
   listen (>= 3.0.5, < 3.2)
   paperclip

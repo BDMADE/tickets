@@ -15,6 +15,13 @@
 //= require bootstrap-sprockets
 //= require dataTables/jquery.dataTables
 //= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
+//= require dataTables/extras/dataTables.buttons
+//= require buttons.flash.js
+//= require jszip
+//= require pdfmake
+//= require vf_fonts
+//= require buttons.html5
+//= require buttons.print
 //= require fastclick
 //= require icheck
 //= require jquery.validate

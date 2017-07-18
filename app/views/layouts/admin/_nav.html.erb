@@ -18,7 +18,7 @@
     <ul class="sidebar-menu">
       <li class="header">MAIN NAVIGATION</li>
       <li class="#">
-        <a href="#">
+        <a href="<%= dashboard_url %>">
           <i class="fa fa-dashboard"></i> <span>Dashboard</span>
         </a>
       </li>
@@ -40,6 +40,18 @@
       <li>
         <a href="<%= password_changes_url %>">
           <i class="fa fa-key"></i> <span>Change Password</span>
+        </a>
+      </li>
+
+      <li>
+        <a class="<%= 'hidden' unless has_permission?('ticket') %>" href="<%= tickets_url %>">
+          <i class="fa fa-book"></i> <span>Tickets</span>
+        </a>
+      </li>
+
+      <li>
+        <a class="<%= 'hidden' unless has_permission?('dashboard') %>" href="<%= reports_url %>">
+          <i class="fa fa-wpforms"></i> <span>Reports</span>
         </a>
       </li>
 

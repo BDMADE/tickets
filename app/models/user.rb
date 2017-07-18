@@ -20,6 +20,16 @@ class User < ApplicationRecord
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }, on: :update, allow_blank: true
 
+  # scope for agents count
+  scope :agents_count, -> {
+    where(user_type_id: UserType.find_by(name: 'agent').id).count
+  }
+
+  # scope for customer count
+  scope :customers_count, -> {
+    where(user_type_id: UserType.find_by(name: 'customer').id).count
+  }
+
   # Returns the hash digest of the given string.
   def User.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :

@@ -100,5 +100,7 @@ gem 'sdoc', group: :doc
 # for api built
 gem 'grape'
 
+# for zip
+gem 'jszip-rails'
 # for mapping test coverage
 gem 'simplecov', :require => false, :group => :test
