@@ -4,6 +4,7 @@ class CreatePermissions < ActiveRecord::Migration[5.1]
       table.belongs_to :user_type, foreign_key: true
       table.boolean :dashboard
       table.boolean :usertype
+      table.boolean :ticket
       table.boolean :user
       table.boolean :add
       table.boolean :edit

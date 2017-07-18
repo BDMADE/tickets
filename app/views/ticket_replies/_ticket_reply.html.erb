@@ -1,0 +1,20 @@
+<% if ticket_reply.user.user_type.name == 'customer' %>
+  <% div_class = 'col-md-10 col-xs-10 col-md-offset-2 col-xs-offset-2' %>
+  <% box_color = 'box-primary' %>
+<% else %>
+  <% div_class = 'col-md-8 col-xs-8 col-md-offset-4 col-xs-offset-4' %>
+  <% box_color = 'box-success' %>
+<% end %>
+<div class="container">
+<div class="row">
+  <div class="<%= div_class %>">
+    <!-- general form elements -->
+    <div class="box <%= box_color %>">
+      <div class="box-body">
+          <p><%= ticket_reply.description %></p>
+          <p>Reply-from: <b><%= ticket_reply.user.name %></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

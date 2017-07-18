@@ -5,6 +5,22 @@ $(document).ready(function() {
     });
 } );
 
+$(document).ready(function() {
+  $('#example4').DataTable( {
+    'scrollX': false,
+    "bFilter": false,
+    "bPaginate": false,
+    dom: 'Bfrtip',
+    buttons: [
+      'pdfHtml5'
+    ],
+    orientation: 'portrait',
+    className: 'buttons-pdf',
+    pageSize: 'A4'
+
+  });
+});
+
 // for iCheck button
 $(function () {
   $('input').iCheck({

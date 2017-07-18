@@ -28,13 +28,6 @@ RSpec.describe SessionsController, type: :controller do
       remember_me: nil }
   end
 
-  describe 'GET #new' do
-    it 'returns http success' do
-      get :new
-      expect(response).to have_http_status(:success)
-    end
-  end
-
   describe 'POST #create' do
     context 'valid params of using username' do
       it 'updates users ip address and re-direct to dashboard' do
