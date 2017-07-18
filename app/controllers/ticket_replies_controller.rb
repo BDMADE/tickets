@@ -7,15 +7,6 @@ class TicketRepliesController < ApplicationController
     redirect_to @ticket
   end
 
-  def destroy
-    if @ticket_reply.destroy
-      flash[:success] = "Ticket Reply item was deleted."
-    else
-      flash[:error] = "Ticket Reply item could not be deleted."
-    end
-    redirect_to @ticket
-  end
-
   private
 
   def set_ticket

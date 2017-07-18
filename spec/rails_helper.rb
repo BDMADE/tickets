@@ -7,6 +7,9 @@ require 'capybara/rspec'
 require 'login_helper'
 require 'simplecov'
 SimpleCov.start
+
+Dir[Rails.root.join("spec/support/**/*rb")].each { |f| require f }
+
 ActiveRecord::Migration.maintain_test_schema!
 # rubocop:disable MethodLength
 RSpec.configure do |config| 
@@ -16,6 +19,8 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   config.include(Shoulda::Matchers::ActiveModel, type: :model)
   config.include(Shoulda::Matchers::ActiveRecord, type: :model)
+
+  config.include Features::SessionHelpers, :type => :feature
 
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true

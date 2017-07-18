@@ -76,6 +76,7 @@ group :development, :test do
   gem 'webmock'
   gem 'simplecov', require: false
   gem 'timecop'
+  gem 'launchy'
 end
 
 group :development do
