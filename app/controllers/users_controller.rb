@@ -54,7 +54,13 @@ class UsersController < ApplicationController
         }
         format.json { render :show, status: :created, location: @user }
       else
-        format.html { redirect_to registrations_path, alert: @user.errors.full_messages.to_sentence }
+        format.html {
+          if @user.user_type.name == 'customer'
+            redirect_to registrations_path, alert: @user.errors.full_messages.to_sentence
+          else
+            redirect_to new_user_path, alert: @user.errors.full_messages.to_sentence
+          end
+        }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end

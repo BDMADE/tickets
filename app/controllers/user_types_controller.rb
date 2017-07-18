@@ -47,7 +47,7 @@ class UserTypesController < ApplicationController
         format.html { redirect_to @user_type, notice: 'User type was successfully created.' }
         format.json { render :show, status: :created, location: @user_type }
       else
-        format.html { render :new }
+        format.html { redirect_to new_user_type_path, alert: @user_type.errors.full_messages.to_sentence }
         format.json { render json: @user_type.errors, status: :unprocessable_entity }
       end
     end

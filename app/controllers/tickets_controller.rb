@@ -57,7 +57,7 @@ class TicketsController < ApplicationController
         }
         format.json { render :show, status: :created, location: @ticket }
       else
-        format.html { render :new }
+        format.html { redirect_to new_ticket_path, alert: @ticket.errors.full_messages.to_sentence }
         format.json { render json: @ticket.errors, status: :unprocessable_entity }
       end
     end

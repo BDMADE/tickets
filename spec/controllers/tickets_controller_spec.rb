@@ -23,7 +23,7 @@ RSpec.describe TicketsController, type: :controller do
       subject: nil,
       message: nil,
       status_type: nil,
-      user_id: nil
+      user_id: user.id
   }
   end
 
@@ -74,9 +74,9 @@ RSpec.describe TicketsController, type: :controller do
     end
 
     context "with invalid params" do
-      it "returns a success response" do
-        post :create, params: {ticket: invalid_attributes}
-        expect(response).to be_success
+      it "returns a 302 response" do
+        post :create, params: { ticket: invalid_attributes }
+        expect(response.status).to eq(302)
       end
     end
   end

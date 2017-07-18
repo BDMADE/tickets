@@ -21,11 +21,13 @@ class User < ApplicationRecord
   validates :password, presence: true, length: { minimum: 6 }, on: :update, allow_blank: true
 
   # scope for agents count
+  # User.agents_count
   scope :agents_count, -> {
     where(user_type_id: UserType.find_by(name: 'agent').id).count
   }
 
   # scope for customer count
+  # User.customers_count
   scope :customers_count, -> {
     where(user_type_id: UserType.find_by(name: 'customer').id).count
   }
