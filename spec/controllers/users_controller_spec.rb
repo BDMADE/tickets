@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe UsersController, type: :controller do
   let(:user_type) { FactoryGirl.create :user_type }
+  let(:client_user_type) { FactoryGirl.create :user_type, name: 'customer' }
   let!(:permission) { FactoryGirl.create :permission, user_type_id: user_type.id }
   let(:user) { FactoryGirl.create :user, name: 'John', user_type_id: user_type.id }
 
@@ -29,7 +30,7 @@ RSpec.describe UsersController, type: :controller do
     pin_number: nil,
     published: false,
     profession: nil,
-
+    user_type_id: client_user_type.id
   }
   end
 
@@ -49,9 +50,10 @@ RSpec.describe UsersController, type: :controller do
     end
   end
 
-  describe 'GET #new' do
-    it 'assigns a new user as @user' do
-      get :new
+  describe 'GET #registration' do
+    it 'assigns a registration user as @user' do
+      FactoryGirl.create :user_type, name: 'customer'
+      get :registration
       expect(assigns(:user)).to be_a_new(User)
     end
   end
@@ -66,7 +68,7 @@ RSpec.describe UsersController, type: :controller do
 
   describe 'POST #create' do
     context 'with valid params' do
-      it 'creates a new User' do
+      it 'creates a registration User' do
         expect {
           post :create, params: { user: valid_attributes }
         }.to change(User, :count).by(1)
@@ -86,13 +88,13 @@ RSpec.describe UsersController, type: :controller do
 
     context 'with invalid params' do
       it 'assigns a newly created but unsaved user as @user' do
-        post :create, params: {user: invalid_attributes}
+        post :create, params: { user: invalid_attributes }
         expect(assigns(:user)).to be_a_new(User)
       end
 
-      it 're-renders the new template' do
+      it 're-renders the registration template' do
         post :create, params: {user: invalid_attributes}
-        expect(response).to render_template("new")
+        expect(response).to redirect_to(registrations_path)
       end
     end
   end

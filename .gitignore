@@ -12,10 +12,11 @@
   /log/* 
   !/log/.keep /tmp 
   /.idea/
-  config/database.yml
+  config/database.sqlite.yml
 log/development.log
 tmp/cache
 tmp/pids
 tmp/restart.txt
 tmp/sockets
 log/test.log
+coverage

@@ -11,6 +11,7 @@ end
 gem 'rails', '~> 5.1.2'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.3.18', '< 0.5', group: :development
+#gem 'sqlite3', group: :development
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -75,6 +76,7 @@ group :development, :test do
   gem 'webmock'
   gem 'simplecov', require: false
   gem 'timecop'
+  gem 'launchy'
 end
 
 group :development do
@@ -94,3 +96,12 @@ gem 'pg', group: :production
 gem 'rack-cache', :require => 'rack/cache'
 # install gem better_error
 gem 'better_errors', '~> 2.1', '>= 2.1.1'
+# bundle exec rake doc:rails generates the API under doc/api.
+gem 'sdoc', group: :doc
+# for api built
+gem 'grape'
+
+# for zip
+gem 'jszip-rails'
+# for mapping test coverage
+gem 'simplecov', :require => false, :group => :test

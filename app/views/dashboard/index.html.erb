@@ -1,2 +1,98 @@
-<h1>Dashboard#index</h1>
-<p>Find me in app/views/dashboard/index.html.erb</p>
+<div class="row">
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="info-box">
+      <span class="info-box-icon bg-aqua"><i class="fa fa-book"></i></span>
+      <div class="info-box-content">
+        <span class="info-box-number">Total Open Tickets</span>
+        <span class="info-box-text"><%= @open_tickets %></span>
+      </div><!-- /.info-box-content -->
+    </div><!-- /.info-box -->
+  </div><!-- /.col -->
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="info-box">
+      <span class="info-box-icon bg-red"><i class="fa fa-coffee"></i></span>
+      <div class="info-box-content">
+        <span class="info-box-number">Total Closed Tickets</span>
+        <span class="info-box-text"><%= @closed_tickets %></span>
+      </div><!-- /.info-box-content -->
+    </div><!-- /.info-box -->
+  </div><!-- /.col -->
+  <!-- fix for small devices only -->
+  <div class="clearfix visible-sm-block"></div>
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="info-box">
+      <span class="info-box-icon bg-green"><i class="fa fa-cogs"></i></span>
+      <div class="info-box-content">
+        <span class="info-box-number">Total agent</span>
+        <span class="info-box-text"><%= @agents %></span>
+      </div><!-- /.info-box-content -->
+    </div><!-- /.info-box -->
+  </div><!-- /.col -->
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="info-box">
+      <span class="info-box-icon bg-yellow"><i class="fa fa-users"></i></span>
+      <div class="info-box-content">
+        <span class="info-box-number">Total Client</span>
+        <span class="info-box-text"><%= @customers %></span>
+      </div><!-- /.info-box-content -->
+    </div><!-- /.info-box -->
+  </div><!-- /.col -->
+</div><!-- /.row -->
+<!-- /.row -->
+<!-- Main row -->
+<div class="row">
+  <div class="col-xs-12 col-md-12">
+    <div class="box">
+      <div class="box-header">
+        <div class=" col-md-6 col-xs-6">
+          <h3 class="box-title">Ticket List</h3>
+        </div>
+      </div>
+      <!-- /.box-header -->
+      <div class="box-body">
+        <table id="example1" class="table table-bordered table-striped">
+          <thead>
+          <tr>
+            <th>Customer Name</th>
+            <th>Subject</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+          </thead>
+          <tbody>
+          <% @tickets.each do |ticket| %>
+            <tr>
+              <td><%= ticket.user.name %></td>
+              <td><%= ticket.subject %></td>
+              <% if ticket.status_type == 'open' %>
+                <% span_class = 'label-success'  %>
+              <% else %>
+                <% span_class = 'label-danger'  %>
+              <% end %>
+              <td>
+                <span class="label <%= span_class %>"><%= ticket.status_type %></span></td>
+              <td>
+                <a href="<%= edit_ticket_path(ticket) %>" class="btn btn-info btn-flat <%= 'hidden' unless has_permission?('edit') %>" ><i class="fa fa-pencil"></i></a>
+                <a href="<%= ticket_path(ticket) %>" class="btn btn-success btn-flat" ><i class="fa fa-eye"></i></a>
+                <a data-confirm="Are you sure?" class='btn btn-danger btn-flat <%= 'hidden' unless has_permission?('remove_ability') %>' rel="nofollow" data-method="delete" href="<%= ticket_path(ticket) %>"><i class="fa fa-trash-o"></i></a>
+              </td>
+            </tr>
+          <% end %>
+          </tbody>
+          <tfoot>
+          <tr>
+            <th>Customer Name</th>
+            <th>Subject</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+          </tfoot>
+        </table>
+      </div>
+      <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+  </div>
+  <!-- /.col -->
+</div>
+<!-- /.row -->

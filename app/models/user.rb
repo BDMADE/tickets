@@ -4,6 +4,7 @@ class User < ApplicationRecord
                                       thumb: '100x100>' }, default_url: '/assets/no-user.png'
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
   belongs_to :user_type, class_name: 'UserType', inverse_of: 'users'
+  has_many :tickets, class_name: 'Ticket', inverse_of: 'user', dependent: :destroy
   delegate :name, to: :user_type, prefix: true
 
   attr_accessor :remember_token
@@ -18,6 +19,18 @@ class User < ApplicationRecord
             uniqueness: { case_sensitive: false }
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }, on: :update, allow_blank: true
+
+  # scope for agents count
+  # User.agents_count
+  scope :agents_count, -> {
+    where(user_type_id: UserType.find_by(name: 'agent').id).count
+  }
+
+  # scope for customer count
+  # User.customers_count
+  scope :customers_count, -> {
+    where(user_type_id: UserType.find_by(name: 'customer').id).count
+  }
 
   # Returns the hash digest of the given string.
   def User.digest(string)

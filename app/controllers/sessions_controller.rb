@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   def new
-    @title = 'Sign in'    
+    @title = 'Sign in'
     if logged_in?
       redirect_to root_path, notice: 'You are already logged in !'
     end
@@ -19,7 +19,11 @@ class SessionsController < ApplicationController
       log_in user
       remember_me == '1' ? remember(user) : forget(user)
       user.update(ip_address: user_ip_address)
-      redirect_to welcome_url, notice: 'Logged in !'
+      if user.user_type.name == 'customer'
+        redirect_to root_url, notice: 'Logged in !'
+      else
+        redirect_to welcome_url, notice: 'Logged in !'
+      end
     else
       redirect_to login_path, alert: 'Invalid data combination ! Please log in again'
     end

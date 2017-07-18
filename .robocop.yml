@@ -198,7 +198,7 @@ Style/EachWithObject:
   Description: Prefer  over  or .
   Enabled: false
 Style/EmptyLiteral:
-  Description: Prefer literals to Array.new/Hash.new/String.new.
+  Description: Prefer literals to Array.registration/Hash.registration/String.registration.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#literal-array-hash
   Enabled: true
 Style/ModuleFunction:
