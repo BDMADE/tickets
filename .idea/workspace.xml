@@ -2,14 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c53a5300-f2c8-4694-8749-85da54f04985" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/test.sqlite3" afterPath="$PROJECT_DIR$/db/test.sqlite3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/User_agents_count_returns_total_number_of_agents__tickets.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/User_agents_count_returns_total_number_of_customers__tickets.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/database.sqlite.yml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/test.sqlite3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/api/tickets/tickets_api_spec.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/api/users/types_api_spec.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/api/users/users_api_spec.rb" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/config/database.mysql.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/tickets.iml" afterPath="$PROJECT_DIR$/.idea/tickets.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tickets/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/tickets/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/setup" afterPath="$PROJECT_DIR$/bin/setup" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/circle.yml" afterPath="$PROJECT_DIR$/circle.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -24,67 +36,67 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_GET__api_user_types_assigns_all_user_types_as_user_types__tickets.coverage" NAME="Users::TypesAPI GET #api/user_types assigns all user types as user_types: tickets Coverage Results" MODIFIED="1500284008988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@TicketsController__tickets__1_.coverage" NAME="TicketsController: tickets (1) Coverage Results" MODIFIED="1500268111343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@TicketRepliesController__tickets.coverage" NAME="TicketRepliesController: tickets Coverage Results" MODIFIED="1500272294138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@UserTypesController__tickets.coverage" NAME="UserTypesController: tickets Coverage Results" MODIFIED="1500267140644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_POST__api_user_types_with_valid_params_creates_a_registration_Ticket__tickets.coverage" NAME="Users::TypesAPI POST #api/user_types with valid params creates a registration Ticket: tickets Coverage Results" MODIFIED="1500285724819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Sign_in__tickets.coverage" NAME="Sign in: tickets Coverage Results" MODIFIED="1500357738128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_GET__api_user_types_1_assigns_specific_user_types_as_user_types__tickets.coverage" NAME="Users::TypesAPI GET #api/user_types/1 assigns specific user types as user_types: tickets Coverage Results" MODIFIED="1500284092145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Registration_user_can_not_sign_up_with_existing_email__tickets.coverage" NAME="Registration user can not sign up with existing email: tickets Coverage Results" MODIFIED="1500360790056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Run_spec__tickets_api_spec___tickets.coverage" NAME="Run spec 'tickets_api_spec': tickets Coverage Results" MODIFIED="1500290194318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_POST__api_user_types_creates_a_user_type__tickets.coverage" NAME="Users::TypesAPI POST #api/user_types creates a user type: tickets Coverage Results" MODIFIED="1500287879458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Ticket_closed_ticket__tickets.coverage" NAME="Ticket#closed_ticket: tickets Coverage Results" MODIFIED="1500365125218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
     <SUITE FILE_PATH="coverage/tickets@Registration_user_can_not_sign_up_with_existing_username__tickets.coverage" NAME="Registration user can not sign up with existing username: tickets Coverage Results" MODIFIED="1500360598079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@UsersController__tickets.coverage" NAME="UsersController: tickets Coverage Results" MODIFIED="1500363802102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@User_Type_user_can_not_add_new_user_type_with_existing_name__tickets.coverage" NAME="User Type user can not add new user type with existing name: tickets Coverage Results" MODIFIED="1500362607266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_POST__api_user_types_with_valid_params__tickets.coverage" NAME="Users::TypesAPI POST #api/user_types with valid params: tickets Coverage Results" MODIFIED="1500285215754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_GET__api_user_types_assigns_all_user_types_as_user_types__tickets.coverage" NAME="Users::TypesAPI GET #api/user_types assigns all user types as user_types: tickets Coverage Results" MODIFIED="1500284008988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
     <SUITE FILE_PATH="coverage/tickets@Tickets__TicketsAPI__tickets.coverage" NAME="Tickets::TicketsAPI: tickets Coverage Results" MODIFIED="1500290288647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@ApplicationHelper__tickets.coverage" NAME="ApplicationHelper: tickets Coverage Results" MODIFIED="1500281249917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_GET__api_user_types_1_when_user_type_is_not_exist_returns_404__tickets.coverage" NAME="Users::TypesAPI GET #api/user_types/1 when user type is not exist returns 404: tickets Coverage Results" MODIFIED="1500284239570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Users__UsersAPI_GET__api_users_1__tickets.coverage" NAME="Users::UsersAPI GET #api/users/1: tickets Coverage Results" MODIFIED="1500288821530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Sign_in_user_can_sign_in_with_valid_credentials_using_username__tickets.coverage" NAME="Sign in user can sign in with valid credentials using username: tickets Coverage Results" MODIFIED="1500357667889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@User_Type__tickets.coverage" NAME="User Type: tickets Coverage Results" MODIFIED="1500362639713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_POST__api_user_types__tickets.coverage" NAME="Users::TypesAPI POST #api/user_types: tickets Coverage Results" MODIFIED="1500285369282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Registration_user_can_sign_up_with_valid_credentials__tickets.coverage" NAME="Registration user can sign up with valid credentials: tickets Coverage Results" MODIFIED="1500360249918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Sign_in_user_can_sign_in_with_valid_credentials__tickets.coverage" NAME="Sign in user can sign in with valid credentials: tickets Coverage Results" MODIFIED="1500357541047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Sign_in__tickets.coverage" NAME="Sign in: tickets Coverage Results" MODIFIED="1500357738128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@UsersController_POST__create_with_invalid_params__tickets.coverage" NAME="UsersController POST #create with invalid params: tickets Coverage Results" MODIFIED="1500364020013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@UserTypesController__tickets.coverage" NAME="UserTypesController: tickets Coverage Results" MODIFIED="1500267140644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_PUT__api_user_types_invalid_params_returns_error__tickets.coverage" NAME="Users::TypesAPI PUT #api/user_types invalid params returns error: tickets Coverage Results" MODIFIED="1500288376889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_POST__api_user_types_invalid_params_creates_a_user_type__tickets.coverage" NAME="Users::TypesAPI POST #api/user_types invalid params creates a user type: tickets Coverage Results" MODIFIED="1500288206753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_POST__api_user_types_valid_params_creates_a_user_type__tickets.coverage" NAME="Users::TypesAPI POST #api/user_types valid params creates a user type: tickets Coverage Results" MODIFIED="1500288142614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@User_Type_user_can_add_new_user_type__tickets.coverage" NAME="User Type user can add new user type: tickets Coverage Results" MODIFIED="1500361655419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
     <SUITE FILE_PATH="coverage/tickets@types_api.coverage" NAME="types_api Coverage Results" MODIFIED="1500283812552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spec/api/users" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@DashboardController_GET__index_returns_http_success__tickets.coverage" NAME="DashboardController GET #index returns http success: tickets Coverage Results" MODIFIED="1500363231160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@TicketRepliesController_POST__create_with_valid_params_creates_a_registration_Ticket__tickets.coverage" NAME="TicketRepliesController POST #create with valid params creates a registration Ticket: tickets Coverage Results" MODIFIED="1500271965384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Registration_user_can_sign_up_with_invalid_username__tickets.coverage" NAME="Registration user can sign up with invalid username: tickets Coverage Results" MODIFIED="1500360449354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Registration_user_can_not_sign_up_with_existing_email__tickets.coverage" NAME="Registration user can not sign up with existing email: tickets Coverage Results" MODIFIED="1500360790056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Users__UsersAPI_POST__api_users_valid_params__tickets.coverage" NAME="Users::UsersAPI POST #api/users valid params: tickets Coverage Results" MODIFIED="1500290677312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Users__UsersAPI_GET__api_users__tickets.coverage" NAME="Users::UsersAPI GET #api/users: tickets Coverage Results" MODIFIED="1500288916543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
     <SUITE FILE_PATH="coverage/tickets@Ticket__tickets.coverage" NAME="Ticket: tickets Coverage Results" MODIFIED="1500365276488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@TicketsController_POST__create_with_invalid_params__tickets.coverage" NAME="TicketsController POST #create with invalid params: tickets Coverage Results" MODIFIED="1500364175893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@TicketsController__tickets.coverage" NAME="TicketsController: tickets Coverage Results" MODIFIED="1500267243021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_POST__api_user_types_with_valid_params_creates_a_registration_Ticket__tickets.coverage" NAME="Users::TypesAPI POST #api/user_types with valid params creates a registration Ticket: tickets Coverage Results" MODIFIED="1500285724819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Users__UsersAPI_GET__api_users_1__tickets.coverage" NAME="Users::UsersAPI GET #api/users/1: tickets Coverage Results" MODIFIED="1500288821530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@TicketReply__tickets.coverage" NAME="TicketReply: tickets Coverage Results" MODIFIED="1500268640616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@DashboardController__tickets.coverage" NAME="DashboardController: tickets Coverage Results" MODIFIED="1500363246610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Registration_user_can_sign_up_with_short_password__tickets.coverage" NAME="Registration user can sign up with short password: tickets Coverage Results" MODIFIED="1500360474888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
     <SUITE FILE_PATH="coverage/tickets@Ticket__returns_all_last_month_closed_tickets__tickets.coverage" NAME="Ticket# returns all last month closed tickets: tickets Coverage Results" MODIFIED="1500365233882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
     <SUITE FILE_PATH="coverage/tickets@Sign_in_user_can_sign_in_with_invalid_username__tickets.coverage" NAME="Sign in user can sign in with invalid username: tickets Coverage Results" MODIFIED="1500357719403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@TicketRepliesController_POST__create_with_valid_params_redirects_to_the_tickets__tickets.coverage" NAME="TicketRepliesController POST #create with valid params redirects to the tickets: tickets Coverage Results" MODIFIED="1500272049464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Sign_in_user_can_not_sign_in_if_not_registered__tickets.coverage" NAME="Sign in user can not sign in if not registered: tickets Coverage Results" MODIFIED="1500357230233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@User_agents_count_returns_total_number_of_customers__tickets.coverage" NAME="User#agents_count returns total number of customers: tickets Coverage Results" MODIFIED="1500377917027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Registration_user_can_sign_up_with_invalid_password__tickets.coverage" NAME="Registration user can sign up with invalid password: tickets Coverage Results" MODIFIED="1500360391798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Ticket_closed_ticket__tickets.coverage" NAME="Ticket#closed_ticket: tickets Coverage Results" MODIFIED="1500365125218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_DELETE__api_user_types_1__tickets.coverage" NAME="Users::TypesAPI DELETE #api/user_types/1: tickets Coverage Results" MODIFIED="1500284322216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_POST__api_user_types_creates_a_user_type__tickets.coverage" NAME="Users::TypesAPI POST #api/user_types creates a user type: tickets Coverage Results" MODIFIED="1500287879458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
     <SUITE FILE_PATH="coverage/tickets@User_agents_count_returns_total_number_of_agents__tickets.coverage" NAME="User#agents_count returns total number of agents: tickets Coverage Results" MODIFIED="1500377794314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@User_Type_user_can_add_new_user_type__tickets.coverage" NAME="User Type user can add new user type: tickets Coverage Results" MODIFIED="1500361655419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_POST__api_user_types_with_valid_params__tickets.coverage" NAME="Users::TypesAPI POST #api/user_types with valid params: tickets Coverage Results" MODIFIED="1500285215754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@User_Type_user_can_not_add_new_user_type_with_existing_name__tickets.coverage" NAME="User Type user can not add new user type with existing name: tickets Coverage Results" MODIFIED="1500362607266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_PUT__api_user_types_invalid_params_returns_error__tickets.coverage" NAME="Users::TypesAPI PUT #api/user_types invalid params returns error: tickets Coverage Results" MODIFIED="1500288376889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Users__UsersAPI_POST__api_users_valid_params__tickets.coverage" NAME="Users::UsersAPI POST #api/users valid params: tickets Coverage Results" MODIFIED="1500290677312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Tickets__tickets.coverage" NAME="Tickets: tickets Coverage Results" MODIFIED="1500268177697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@UserTypesController__tickets__1_.coverage" NAME="UserTypesController: tickets (1) Coverage Results" MODIFIED="1500267290855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@TicketReply__tickets.coverage" NAME="TicketReply: tickets Coverage Results" MODIFIED="1500268640616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@UsersController_GET__registration_assigns_a_registration_user_as__user__tickets.coverage" NAME="UsersController GET #registration assigns a registration user as @user: tickets Coverage Results" MODIFIED="1500266760806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@DashboardController__tickets.coverage" NAME="DashboardController: tickets Coverage Results" MODIFIED="1500363246610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Users__UsersAPI_GET__api_users__tickets.coverage" NAME="Users::UsersAPI GET #api/users: tickets Coverage Results" MODIFIED="1500288916543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@TicketRepliesController_POST__create_with_invalid_params__tickets.coverage" NAME="TicketRepliesController POST #create with invalid params: tickets Coverage Results" MODIFIED="1500272269256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Registration_user_can_sign_up_with_invalid_username__tickets.coverage" NAME="Registration user can sign up with invalid username: tickets Coverage Results" MODIFIED="1500360449354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Sign_in_user_can_sign_in_with_valid_credentials_using_username__tickets.coverage" NAME="Sign in user can sign in with valid credentials using username: tickets Coverage Results" MODIFIED="1500357667889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI__tickets.coverage" NAME="Users::TypesAPI: tickets Coverage Results" MODIFIED="1500288398463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@DashboardController_GET__index_returns_http_success__tickets.coverage" NAME="DashboardController GET #index returns http success: tickets Coverage Results" MODIFIED="1500363231160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Registration_user_can_not_sign_up_with_valid_credentials__tickets.coverage" NAME="Registration user can not sign up with valid credentials: tickets Coverage Results" MODIFIED="1500360168017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Registration_user_can_sign_up_with_short_password__tickets.coverage" NAME="Registration user can sign up with short password: tickets Coverage Results" MODIFIED="1500360474888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Users__UsersAPI_POST__api_users_valid_params_creates_a_user__tickets.coverage" NAME="Users::UsersAPI POST #api/users valid params creates a user: tickets Coverage Results" MODIFIED="1500289671323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@UsersController_POST__create_with_invalid_params__tickets.coverage" NAME="UsersController POST #create with invalid params: tickets Coverage Results" MODIFIED="1500364020013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Sign_in_user_can_sign_in_with_valid_credentials__tickets.coverage" NAME="Sign in user can sign in with valid credentials: tickets Coverage Results" MODIFIED="1500357541047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_PUT__api_user_types_valid_params_updates_a_user_type__tickets.coverage" NAME="Users::TypesAPI PUT #api/user_types valid params updates a user type: tickets Coverage Results" MODIFIED="1500288344311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_POST__api_user_types__tickets.coverage" NAME="Users::TypesAPI POST #api/user_types: tickets Coverage Results" MODIFIED="1500285369282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_POST__api_user_types_invalid_params_creates_a_user_type__tickets.coverage" NAME="Users::TypesAPI POST #api/user_types invalid params creates a user type: tickets Coverage Results" MODIFIED="1500288206753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Users__UsersAPI__tickets.coverage" NAME="Users::UsersAPI: tickets Coverage Results" MODIFIED="1500289419408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Sign_in_user_can_not_sign_in_if_not_registered__tickets.coverage" NAME="Sign in user can not sign in if not registered: tickets Coverage Results" MODIFIED="1500357230233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_GET__api_user_types_1_when_user_type_is_not_exist_returns_404__tickets.coverage" NAME="Users::TypesAPI GET #api/user_types/1 when user type is not exist returns 404: tickets Coverage Results" MODIFIED="1500284239570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
     <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_PUT__api_user_types_1__tickets.coverage" NAME="Users::TypesAPI PUT #api/user_types/1: tickets Coverage Results" MODIFIED="1500284714434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_POST__api_user_types_valid_params_creates_a_user_type__tickets.coverage" NAME="Users::TypesAPI POST #api/user_types valid params creates a user type: tickets Coverage Results" MODIFIED="1500288142614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@TicketRepliesController_POST__create_with_valid_params_creates_a_registration_Ticket__tickets.coverage" NAME="TicketRepliesController POST #create with valid params creates a registration Ticket: tickets Coverage Results" MODIFIED="1500271965384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@User_Type__tickets.coverage" NAME="User Type: tickets Coverage Results" MODIFIED="1500362639713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
-    <SUITE FILE_PATH="coverage/tickets@Registration_user_can_sign_up_with_valid_credentials__tickets.coverage" NAME="Registration user can sign up with valid credentials: tickets Coverage Results" MODIFIED="1500360249918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Run_spec__tickets_api_spec___tickets.coverage" NAME="Run spec 'tickets_api_spec': tickets Coverage Results" MODIFIED="1500290194318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_GET__api_user_types_1_assigns_specific_user_types_as_user_types__tickets.coverage" NAME="Users::TypesAPI GET #api/user_types/1 assigns specific user types as user_types: tickets Coverage Results" MODIFIED="1500284092145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@UsersController_GET__registration_assigns_a_registration_user_as__user__tickets.coverage" NAME="UsersController GET #registration assigns a registration user as @user: tickets Coverage Results" MODIFIED="1500266760806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Registration_user_can_not_sign_up_with_valid_credentials__tickets.coverage" NAME="Registration user can not sign up with valid credentials: tickets Coverage Results" MODIFIED="1500360168017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Tickets__tickets.coverage" NAME="Tickets: tickets Coverage Results" MODIFIED="1500268177697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@ApplicationHelper__tickets.coverage" NAME="ApplicationHelper: tickets Coverage Results" MODIFIED="1500281249917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@TicketRepliesController_POST__create_with_valid_params_redirects_to_the_tickets__tickets.coverage" NAME="TicketRepliesController POST #create with valid params redirects to the tickets: tickets Coverage Results" MODIFIED="1500272049464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@TicketRepliesController_POST__create_with_invalid_params__tickets.coverage" NAME="TicketRepliesController POST #create with invalid params: tickets Coverage Results" MODIFIED="1500272269256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@TicketsController__tickets.coverage" NAME="TicketsController: tickets Coverage Results" MODIFIED="1500267243021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@TicketRepliesController__tickets.coverage" NAME="TicketRepliesController: tickets Coverage Results" MODIFIED="1500272294138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@UserTypesController__tickets__1_.coverage" NAME="UserTypesController: tickets (1) Coverage Results" MODIFIED="1500267290855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_PUT__api_user_types_valid_params_updates_a_user_type__tickets.coverage" NAME="Users::TypesAPI PUT #api/user_types valid params updates a user type: tickets Coverage Results" MODIFIED="1500288344311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
     <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_PUT__api_user_types_1_when_user_type_exist_assigns_specific_user_types_as_user_types__tickets.coverage" NAME="Users::TypesAPI PUT #api/user_types/1 when user type exist assigns specific user types as user_types: tickets Coverage Results" MODIFIED="1500285076563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@TicketsController_POST__create_with_invalid_params__tickets.coverage" NAME="TicketsController POST #create with invalid params: tickets Coverage Results" MODIFIED="1500364175893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Users__UsersAPI_POST__api_users_valid_params_creates_a_user__tickets.coverage" NAME="Users::UsersAPI POST #api/users valid params creates a user: tickets Coverage Results" MODIFIED="1500289671323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
     <SUITE FILE_PATH="coverage/tickets@TicketRepliesController_POST__create__tickets.coverage" NAME="TicketRepliesController POST #create: tickets Coverage Results" MODIFIED="1500269154170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@User_agents_count_returns_total_number_of_customers__tickets.coverage" NAME="User#agents_count returns total number of customers: tickets Coverage Results" MODIFIED="1500377917027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI__tickets.coverage" NAME="Users::TypesAPI: tickets Coverage Results" MODIFIED="1500288398463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@UsersController__tickets.coverage" NAME="UsersController: tickets Coverage Results" MODIFIED="1500363802102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Users__UsersAPI__tickets.coverage" NAME="Users::UsersAPI: tickets Coverage Results" MODIFIED="1500395702495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Registration_user_can_sign_up_with_invalid_password__tickets.coverage" NAME="Registration user can sign up with invalid password: tickets Coverage Results" MODIFIED="1500360391798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@TicketsController__tickets__1_.coverage" NAME="TicketsController: tickets (1) Coverage Results" MODIFIED="1500268111343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
+    <SUITE FILE_PATH="coverage/tickets@Users__TypesAPI_DELETE__api_user_types_1__tickets.coverage" NAME="Users::TypesAPI DELETE #api/user_types/1: tickets Coverage Results" MODIFIED="1500284322216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tickets" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -121,63 +133,56 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="user.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="user_types_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/user_types_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="24" />
+            <state relative-caret-position="810">
+              <caret line="45" column="11" lean-forward="false" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
+      <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/user_types/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+            <state relative-caret-position="2">
+              <caret line="7" column="61" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ticket.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/ticket.rb">
+      <file leaf-file-name="edit.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/tickets/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="52" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seeds.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/tickets/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1070">
-              <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <state relative-caret-position="247">
+              <caret line="48" column="70" lean-forward="false" selection-start-line="48" selection-start-column="70" selection-end-line="48" selection-end-column="70" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="welcome.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/dashboard/welcome.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard_controller.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/dashboard_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-              <folding />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="435">
+                <caret line="63" column="42" lean-forward="false" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -200,6 +205,7 @@
       <find>user</find>
       <find>hidde</find>
       <find>create!</find>
+      <find>type</find>
     </findStrings>
     <replaceStrings>
       <replace>User</replace>
@@ -214,12 +220,12 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/api/user_types/user_types_api.rb" />
         <option value="$PROJECT_DIR$/app/api/tickets/user_types_api.rb" />
         <option value="$PROJECT_DIR$/app/api/products/products_api.rb" />
@@ -248,7 +254,6 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/demo.js" />
         <option value="$PROJECT_DIR$/app/views/dashboard/reports.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/admin/_nav.html.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/spec/login_helper.rb" />
         <option value="$PROJECT_DIR$/spec/rails_helper.rb" />
         <option value="$PROJECT_DIR$/spec/features/sign_in_spec.rb" />
@@ -265,11 +270,13 @@
         <option value="$PROJECT_DIR$/spec/models/ticket_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/user_type_spec.rb" />
         <option value="$PROJECT_DIR$/LICENSE.txt" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/tickets/_form.html.erb" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -287,13 +294,13 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1920" />
-    <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="997" />
+    <option name="x" value="40" />
+    <option name="y" value="-11" />
+    <option name="width" value="1401" />
+    <option name="height" value="912" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -307,6 +314,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -328,15 +336,53 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="spec">
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tickets">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="api">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tickets">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="api">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tickets">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -359,30 +405,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tickets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tickets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -392,6 +421,11 @@
     <property name="add_unversioned_files" value="$PROJECT_DIR$/config/database.yml&#10;true" />
     <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -405,75 +439,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="RSpec.User#agents_count returns total number of customers: tickets">
-    <configuration default="false" name="User#agents_count returns total number of agents: tickets" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="tickets" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/user_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="User#agents_count returns total number of agents" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="User#agents_count returns total number of customers: tickets" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="tickets" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/user_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="User#agents_count returns total number of customers" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="RSpec.Users::UsersAPI: tickets">
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -729,15 +695,6 @@
       <item index="14" class="java.lang.String" itemvalue="RSpec.User#agents_count returns total number of agents: tickets" />
       <item index="15" class="java.lang.String" itemvalue="RSpec.User#agents_count returns total number of customers: tickets" />
     </list>
-    <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.User#agents_count returns total number of customers: tickets" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.User#agents_count returns total number of agents: tickets" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.Ticket: tickets" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.Ticket# returns all last month closed tickets: tickets" />
-        <item index="4" class="java.lang.String" itemvalue="RSpec.Ticket#closed_ticket: tickets" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -758,13 +715,13 @@
       <workItem from="1500353217495" duration="877000" />
       <workItem from="1500356138293" duration="11530000" />
       <workItem from="1500375977986" duration="3955000" />
+      <workItem from="1500389003470" duration="893000" />
+      <workItem from="1500390519038" duration="88000" />
+      <workItem from="1500395046205" duration="865000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Ticket#closed_ticket__tickets - 2017.07.18 at 14h 01m 27s.xml">
-      <configuration name="Ticket#closed_ticket: tickets" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
     <history-entry file="Ticket#closed_ticket__tickets - 2017.07.18 at 14h 01m 49s.xml">
       <configuration name="Ticket#closed_ticket: tickets" configurationId="RSpecRunConfigurationType" />
     </history-entry>
@@ -792,31 +749,34 @@
     <history-entry file="User#agents_count_returns_total_number_of_customers__tickets - 2017.07.18 at 17h 38m 49s.xml">
       <configuration name="User#agents_count returns total number of customers: tickets" configurationId="RSpecRunConfigurationType" />
     </history-entry>
+    <history-entry file="Users__UsersAPI__tickets - 2017.07.18 at 22h 35m 12s.xml">
+      <configuration name="Users::UsersAPI: tickets" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51828000" />
+    <option name="totallyTimeSpent" value="53674000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="23" width="1920" height="997" extended-state="0" />
+    <frame x="40" y="-11" width="1401" height="912" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19755058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20620842" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328541" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992035" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29692832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39909297" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29733333" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39909297" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992035" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -865,48 +825,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/api/tickets/tickets_api.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/api/users/types_api_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/api/users/users_api_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="118" column="3" lean-forward="false" selection-start-line="118" selection-start-column="3" selection-end-line="118" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/api/users/users_api.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="122" column="33" lean-forward="false" selection-start-line="122" selection-start-column="33" selection-end-line="122" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_nav.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="46" lean-forward="false" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tickets/show_tickets.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -984,7 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1007">
           <caret line="53" column="33" lean-forward="false" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -992,7 +909,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="89" lean-forward="false" selection-start-line="6" selection-start-column="89" selection-end-line="6" selection-end-column="89" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,7 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
           <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,15 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="78" column="15" lean-forward="false" selection-start-line="78" selection-start-column="15" selection-end-line="78" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1025,7 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,7 +952,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1083,13 +987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/user_types_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="49" column="104" lean-forward="false" selection-start-line="49" selection-start-column="72" selection-end-line="49" selection-end-column="104" />
         </state>
       </provider>
     </entry>
@@ -1150,17 +1047,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="207">
-            <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/new_user_type_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1172,55 +1058,122 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
+        <state relative-caret-position="540">
           <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
+        <state relative-caret-position="594">
           <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/ticket.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="306">
           <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dashboard/welcome.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1070">
-          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/dashboard_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
+        <state relative-caret-position="378">
           <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/user_types_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="45" column="11" lean-forward="false" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/user_types/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="7" column="61" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tickets/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/api/users/types_api_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/api/users/users_api_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tickets/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="48" column="70" lean-forward="false" selection-start-line="48" selection-start-column="70" selection-end-line="48" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="435">
+            <caret line="63" column="42" lean-forward="false" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

@@ -12,8 +12,8 @@
 
 ActiveRecord::Schema.define(version: 20170716121455) do
 
-  create_table "permissions", force: :cascade do |t|
-    t.integer "user_type_id"
+  create_table "permissions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.bigint "user_type_id"
     t.boolean "dashboard"
     t.boolean "usertype"
     t.boolean "ticket"
@@ -26,36 +26,36 @@ ActiveRecord::Schema.define(version: 20170716121455) do
     t.index ["user_type_id"], name: "index_permissions_on_user_type_id"
   end
 
-  create_table "ticket_replies", force: :cascade do |t|
+  create_table "ticket_replies", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.text "description"
-    t.integer "user_id"
-    t.integer "ticket_id"
+    t.bigint "user_id"
+    t.bigint "ticket_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["ticket_id"], name: "index_ticket_replies_on_ticket_id"
     t.index ["user_id"], name: "index_ticket_replies_on_user_id"
   end
 
-  create_table "tickets", force: :cascade do |t|
+  create_table "tickets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.string "email"
     t.string "subject"
     t.text "message"
     t.integer "status_type"
-    t.integer "user_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_tickets_on_user_id"
   end
 
-  create_table "user_types", force: :cascade do |t|
+  create_table "user_types", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.boolean "published"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.string "username"
     t.string "password_digest"
@@ -65,7 +65,7 @@ ActiveRecord::Schema.define(version: 20170716121455) do
     t.boolean "published", default: false
     t.string "profession"
     t.string "phone"
-    t.integer "user_type_id"
+    t.bigint "user_type_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "image_file_name"
@@ -75,4 +75,9 @@ ActiveRecord::Schema.define(version: 20170716121455) do
     t.index ["user_type_id"], name: "index_users_on_user_type_id"
   end
 
+  add_foreign_key "permissions", "user_types"
+  add_foreign_key "ticket_replies", "tickets"
+  add_foreign_key "ticket_replies", "users"
+  add_foreign_key "tickets", "users"
+  add_foreign_key "users", "user_types"
 end

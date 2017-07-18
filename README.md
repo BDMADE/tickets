@@ -60,6 +60,8 @@ RSpec
 
 Capybara
 
+# REST API
+It has User, UserType and Ticket Rest API.
 
 # License
 Licensed under the MIT license
