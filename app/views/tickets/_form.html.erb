@@ -45,9 +45,8 @@
               <% else %>
                 <%= f.select :status_type, Ticket.status_types.keys %>
               <% end %>
-              <% if request.original_url == new_user_type_url %>
+              <% if request.original_url == new_ticket_url %>
                 <%= f.hidden_field :user_id, value: current_user.id %>
-
               <% end %>
             </div>
 
