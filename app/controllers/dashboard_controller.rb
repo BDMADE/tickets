@@ -26,6 +26,7 @@ class DashboardController < ApplicationController
     @tickets = Ticket.where(user_id: current_user.id) unless current_user.nil?
     @open_tickets = Ticket.open_ticket(current_user) unless current_user.nil?
     @closed_tickets = Ticket.closed_ticket(current_user) unless current_user.nil?
+    puts 'hello'
   end
 
   def reports
