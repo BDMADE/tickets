@@ -19,8 +19,7 @@ class DashboardController < ApplicationController
     @breadcrumb = 'Dashboard'
     @tickets = Ticket.open
     @open_tickets = Ticket.open unless current_user.nil?
-    @closed_tickets = Ticket.closed unless current_user.nil?
-    puts "hello"
+    @closed_tickets = Ticket.closed unless current_user.nil?    
   end
 
   def home
