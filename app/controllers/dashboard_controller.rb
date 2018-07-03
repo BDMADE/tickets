@@ -12,7 +12,7 @@ class DashboardController < ApplicationController
     @closed_tickets = Ticket.closed.count
     @agents = User.agents_count
     @customers = User.customers_count
-    # test 3
+    # test 5
   end
 
   def welcome
@@ -20,7 +20,8 @@ class DashboardController < ApplicationController
     @breadcrumb = 'Dashboard'
     @tickets = Ticket.open
     @open_tickets = Ticket.open unless current_user.nil?
-    @closed_tickets = Ticket.closed unless current_user.nil?    
+    @closed_tickets = Ticket.closed unless current_user.nil?
+    # test 4   
   end
 
   def home
