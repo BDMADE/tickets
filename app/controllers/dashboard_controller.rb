@@ -12,7 +12,7 @@ class DashboardController < ApplicationController
     @closed_tickets = Ticket.closed.count
     @agents = User.agents_count
     @customers = User.customers_count
-    # test 2
+    # test 3
   end
 
   def welcome
